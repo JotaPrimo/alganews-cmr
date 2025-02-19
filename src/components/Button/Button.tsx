@@ -1,16 +1,18 @@
 import * as B from './Button.styles'
 
-export interface ButtonProps {
+export interface ButtonProps extends React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
     variant: 'danger' | 'text' | 'primary';
-    label: string;
-    backgroundColor?: string;
-    onClick?: () => void; 
+    label: string; 
 }
 
-function Button({ variant, label, backgroundColor, onClick }: ButtonProps) {
-    return <B.Wrapper variant={variant} style={{ backgroundColor }} onClick={onClick}>
+function Button({ variant, label, ref, ...props}: ButtonProps) {
+    return <B.Wrapper 
+        variant={variant} 
+        { ...props}
+       >
         {label}
     </B.Wrapper>;
 }
+
 
 export default Button;
