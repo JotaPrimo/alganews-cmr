@@ -27,6 +27,7 @@ export const DefaultCurrency: Story = {
   args: {
     description: "Ganhos na semana",
     value: 560322.02,
+    color: 'default'
   },
 };
 
@@ -34,6 +35,7 @@ export const Primary: Story = {
   args: {
     description: "Ganhos na semana",
     value: 560322.02,
+    color: 'primary'
   },
 };
 
@@ -41,5 +43,6 @@ export const PrimaryCurrency: Story = {
   args: {
     description: "Ganhos na semana",
     value: 560322.02,
+    color: 'primary'
   },
 };
