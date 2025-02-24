@@ -5,7 +5,7 @@ import Heading, {
 } from "../components/Typography/Heading";
 
 const meta = {
-  title: "Example/Heading",
+  title: "Typography/Heading",
   component: Heading,
   parameters: {},
 
